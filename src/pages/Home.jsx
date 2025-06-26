@@ -7,7 +7,7 @@ const CircularText = () => (
     <defs>
       <path id="circle" d="M110,110 m-90,0 a90,90 0 1,1 180,0 a90,90 0 1,1 -180,0" />
     </defs>
-    <text fontSize="22" fill="#0e9488" fontFamily="Georgia, serif" letterSpacing="2">
+    <text fontSize="15" fill="#0e9488" fontFamily="Georgia, serif" letterSpacing="2">
       <textPath xlinkHref="#circle" startOffset="0">
         DESIGN IS LIFE · DESIGN IS LIFE · DESIGN IS LIFE ·
       </textPath>
