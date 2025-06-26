@@ -1,37 +1,53 @@
 import React from 'react';
 import { FaLinkedin, FaBehance } from 'react-icons/fa';
+import Icon from '../assets/person.png'
+
+const CircularText = () => (
+  <svg width="220" height="220" viewBox="0 0 220 220" className="absolute -right-16 top-1/2 -translate-y-1/2 animate-spin-slow z-0 opacity-80 pointer-events-none">
+    <defs>
+      <path id="circle" d="M110,110 m-90,0 a90,90 0 1,1 180,0 a90,90 0 1,1 -180,0" />
+    </defs>
+    <text fontSize="22" fill="#0e9488" fontFamily="Georgia, serif" letterSpacing="2">
+      <textPath xlinkHref="#circle" startOffset="0">
+        DESIGN IS LIFE · DESIGN IS LIFE · DESIGN IS LIFE ·
+      </textPath>
+    </text>
+  </svg>
+);
 
 const Home = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-green-100 via-white to-white text-gray-900 font-sans flex flex-col justify-center items-center px-4 md:px-20 lg:flex-row">
+    <section className="min-h-[76vh] bg-[radial-gradient(circle_at_60%_40%,#d1fae5_0%,#f0fdfa_100%)] text-gray-900 font-sans flex flex-col justify-center px-4 md:px-20 lg:flex-row relative overflow-x-hidden">
       {/* Left Content */}
-      <div className="flex-1 text-center lg:text-left py-12">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">Hi, I am Munya</h1>
-        <p className="text-lg md:text-xl max-w-xl mx-auto lg:mx-0 mb-6">
-          I’m a Senior Product Designer (UI, UX), and a Design mentor. I am passionate about creating a user-centered design, gathering and translating user data into design decisions and products.
+      <div className="flex-1 flex flex-col justify-center py-16 md:py-24 z-10">
+        <div className="relative w-fit mx-auto lg:mx-0 mb-4 flex items-center justify-center" style={{minWidth: 'max-content'}}>
+          <span className="block relative z-10">
+            <h1 className="text-5xl md:text-7xl lg:text-7xl font-serif font-bold mb-2 whitespace-nowrap inline-block align-middle">Hi, I am Munya</h1>
+          </span>
+          <CircularText />
+        </div>
+        <p className="md:text-xl max-w-xl mx-auto lg:mx-0 mb-8">
+          I'm a Senior Product Designer (UI, UX), and a Design mentor. I am passionate about creating a user-centered design, gathering and translating user data into design decisions and products.
         </p>
-
-        <div className="flex justify-center lg:justify-start space-x-6 text-sm md:text-base font-semibold">
-          <a href="#" className="hover:underline">Resume ↗</a>
-          <a href="#" className="hover:underline flex items-center gap-1"><FaLinkedin /> LinkedIn ↗</a>
-          <a href="#" className="hover:underline flex items-center gap-1"><FaBehance /> Behance ↗</a>
+        <div className="flex flex-wrap gap-8 font-serif font-semibold text-base md:text-lg">
+          <a href="#" className="hover:underline flex items-center gap-1">Resume <span aria-hidden>↗</span></a>
+          <a href="#" className="hover:underline flex items-center gap-1"><FaLinkedin /> Linkedin <span aria-hidden>↗</span></a>
+          <a href="#" className="hover:underline flex items-center gap-1"><FaBehance /> Behance <span aria-hidden>↗</span></a>
         </div>
       </div>
 
       {/* Right Content */}
-      <div className="flex-1 flex justify-center items-center relative mt-10 lg:mt-0">
-        <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-black flex items-center justify-center overflow-hidden relative">
-          {/* Replace with actual image */}
+      <div className="flex-1 flex justify-center items-center relative mt-10 lg:mt-0 z-10">
+        <div className="w-64 h-72 md:w-80 md:h-96 bg-black rounded-t-full rounded-b-none flex items-end justify-center overflow-hidden relative shadow-lg">
           <img
-            src="https://em-content.zobj.net/thumbs/160/apple/354/person-with-fingers-crossed-medium-dark-skin-tone_1f91e-1f3fe_1f3fe.png"
+            src={Icon}
             alt="Munya Emoji"
-            className="w-40 h-40 object-cover"
+            className="w-48 h-48 object-contain mb-0"
           />
         </div>
-
         {/* Scroll Indicator */}
-        <p className="absolute right-[-40px] bottom-4 rotate-90 text-sm text-gray-700 tracking-wide">
-          SCROLL ↗
+        <p className="absolute right-[-40px] bottom-4 rotate-90 text-base font-serif text-gray-700 tracking-wide">
+          SCROLL <span aria-hidden>↗</span>
         </p>
       </div>
     </section>

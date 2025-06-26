@@ -1,12 +1,7 @@
-.app-root {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+@keyframes circular-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
-
-.main-content {
-  flex: 1 1 auto;
-  min-height: 0;
-  display: flex;
-  flex-direction: column;
+.circular-text-spin {
+  animation: circular-spin 12s linear infinite;
 }
