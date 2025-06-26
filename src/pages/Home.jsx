@@ -38,11 +38,11 @@ const Home = () => {
 
       {/* Right Content */}
       <div className="flex-1 flex justify-center items-center relative mt-10 lg:mt-0 z-10">
-        <div className="w-64 h-72 md:w-80 md:h-96 bg-black rounded-t-full rounded-b-none flex items-end justify-center overflow-hidden relative shadow-lg">
+        <div className="w-44 h-56 md:w-56 md:h-72 bg-black rounded-t-full rounded-b-none flex items-end justify-center overflow-hidden relative shadow-lg">
           <img
             src={Icon}
             alt="Munya Emoji"
-            className="w-48 h-48 object-contain mb-0"
+            className="w-40 h-40 md:w-64 md:h-64 object-contain mb-0"
           />
         </div>
         {/* Scroll Indicator */}
