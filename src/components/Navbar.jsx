@@ -1,36 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
-    <nav className="w-full border-b border-gray-300 px-4 md:px-6 py-4 bg-transparent font-serif flex flex-col md:flex-row md:items-center md:justify-between relative z-20">
-      <div className="flex items-center justify-between w-full md:w-auto">
-        <div className="text-2xl font-bold">Munyaradzi<span className="text-teal-600">.</span></div>
-        <button
-          className="md:hidden text-3xl focus:outline-none"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
-          ☰
-        </button>
+    <nav className="w-full border-b border-gray-300 px-6 py-4 font-serif flex items-center justify-between sticky top-0 z-30" style={{ background: 'radial-gradient(circle at 60% 40%, #d1fae5 0%, #f0fdfa 100%)' }}>
+      {/* Logo */}
+      <div className="text-2xl font-bold tracking-tight select-none">
+        Munyaradzi<span className="text-teal-600">.</span>
       </div>
-      <ul
-        className={`flex-col md:flex-row md:flex gap-8 text-base font-normal md:items-center transition-all duration-300 bg-white md:bg-transparent w-full md:w-auto left-0 md:static absolute top-full md:top-auto shadow-md md:shadow-none z-10 ${menuOpen ? 'flex' : 'hidden md:flex'}`}
-      >
-        <li><a href="#" className="block py-2 md:py-0 px-4 md:px-0">Works</a></li>
-        <li><a href="#" className="block py-2 md:py-0 px-4 md:px-0">Contributions</a></li>
-        {/* <li><a href="#" className="block py-2 md:py-0 px-4 md:px-0">Talks</a></li>
-        <li><a href="#" className="block py-2 md:py-0 px-4 md:px-0">Community</a></li> */}
-        <li><a href="#" className="block py-2 md:py-0 px-4 md:px-0">Contact me</a></li>
-        <li className="md:hidden flex flex-col gap-2 mt-2 border-t pt-2">
-          <button className="border border-gray-900 px-4 py-1 rounded hover:bg-gray-900 hover:text-white transition w-full">My Resume</button>
-          <span className="text-2xl">🌙</span>
-        </li>
+      {/* Nav Links */}
+      <ul className="flex gap-8 text-base font-normal text-gray-900 font-sans mx-auto">
+        <li><a href="#" className="hover:underline underline-offset-4 transition">Works</a></li>
+        <li><a href="#" className="hover:underline underline-offset-4 transition">Contributions</a></li>
+        <li><a href="#" className="hover:underline underline-offset-4 transition">Talks</a></li>
+        <li><a href="#" className="hover:underline underline-offset-4 transition">Community</a></li>
+        <li><a href="#" className="hover:underline underline-offset-4 transition">Contact me</a></li>
       </ul>
-      <div className="hidden md:flex items-center gap-4">
-        <button className="border border-gray-900 px-4 py-1 rounded hover:bg-gray-900 hover:text-white transition">My Resume</button>
-        <span className="text-2xl">🌙</span>
+      {/* Resume Button & Theme Icon */}
+      <div className="flex items-center gap-4">
+        <button className="border border-gray-900 px-4 py-1 rounded hover:bg-gray-900 hover:text-white transition font-sans text-base font-medium focus:outline-none focus:ring-2 focus:ring-teal-500">My Resume</button>
+        <span className="text-2xl cursor-pointer" title="Toggle dark mode">🌙</span>
       </div>
     </nav>
   );

@@ -112,3 +112,13 @@
   font-weight: 900;
   font-style: italic;
 }
+
+.arrow-rotate {
+  display: inline-block;
+  color: #00754B;
+  transform: rotate(45deg);
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+a:hover .arrow-rotate {
+  transform: rotate(0deg);
+}
