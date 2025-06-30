@@ -27,7 +27,7 @@ const Navbar = () => {
         <li><a href="#" className="hover:underline underline-offset-4 transition">Contributions</a></li>
         <li><a href="#" className="hover:underline underline-offset-4 transition">Talks</a></li>
         <li><a href="#" className="hover:underline underline-offset-4 transition">Community</a></li>
-        <li><a href="#" className="hover:underline underline-offset-4 transition">Contact me</a></li>
+        <li><Link to="/contact" className="hover:underline underline-offset-4 transition">Contact me</Link></li>
       </ul>
       {/* Desktop Resume & Theme Icon */}
       <div className="hidden md:flex items-center gap-4">
@@ -46,7 +46,7 @@ const Navbar = () => {
             <li><a href="#" className="hover:underline underline-offset-4 transition" onClick={() => setMenuOpen(false)}>Contributions</a></li>
             <li><a href="#" className="hover:underline underline-offset-4 transition" onClick={() => setMenuOpen(false)}>Talks</a></li>
             <li><a href="#" className="hover:underline underline-offset-4 transition" onClick={() => setMenuOpen(false)}>Community</a></li>
-            <li><a href="#" className="hover:underline underline-offset-4 transition" onClick={() => setMenuOpen(false)}>Contact me</a></li>
+            <li><Link to="/contact" className="hover:underline underline-offset-4 transition" onClick={() => setMenuOpen(false)}>Contact me</Link></li>
           </ul>
           <button className="mt-4 border border-gray-900 px-4 py-1 rounded hover:bg-gray-900 hover:text-white transition font-sans text-base font-medium focus:outline-none focus:ring-2 focus:ring-teal-500">My Resume</button>
           <span className="mt-4 text-2xl cursor-pointer" title="Toggle dark mode" onClick={handleToggleDark}>{darkMode ? '☀️' : '🌙'}</span>
