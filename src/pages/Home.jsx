@@ -58,7 +58,7 @@ const Home = () => {
 
       {/* Right Content */}
       <div className="flex-1 flex justify-center items-center relative mt-10 lg:mt-0 z-10">
-        <div className="w-44 h-56 md:w-56 md:h-72 bg-black rounded-t-full rounded-b-none flex items-end justify-center overflow-hidden relative shadow-lg">
+        <div className="w-44 h-56 md:w-56 md:h-72 bg-white dark:bg-[#18181b] rounded-t-full rounded-b-none flex items-end justify-center overflow-hidden relative shadow-lg">
           <img
             src={Icon}
             alt="Munya Emoji"
