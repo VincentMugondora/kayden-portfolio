@@ -1,4 +1,5 @@
 import React from 'react';
+import phoneMockup from '../assets/image.png';
 
 const projects = [
   {
@@ -36,15 +37,28 @@ const Works = () => {
         {/* Project Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {projects.map((project, idx) => (
-            <div key={idx} className="border-2 border-green-800 rounded-none p-6 md:p-8 bg-transparent flex flex-col h-full transition-colors w-full max-w-full" style={{ width: '39.375rem', height: '25.85rem', minWidth: '340px', maxWidth: '100%' }}>
-              <h3 className="text-5xl md:text-6xl font-serif font-bold text-green-900 mb-6 leading-none">{project.title}</h3>
-              <p className="text-gray-800 text-base md:text-lg font-normal mb-8" style={{ color: '#222', fontWeight: 400 }}>{project.description}</p>
-              <a href={project.link} className="font-serif font-bold underline underline-offset-2 text-gray-800 flex items-center gap-1 text-lg" style={{ color: '#222' }}>
-                Casetudy
-                <span className="arrow-rotate">
-                  <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M4 8h8M8 4l4 4-4 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                </span>
-              </a>
+            <div key={idx} className="relative overflow-hidden border-2 border-green-800 rounded-none p-6 md:p-8 bg-transparent flex flex-col h-full transition-colors w-full max-w-full group" style={{ width: '39.375rem', height: '25.85rem', minWidth: '340px', maxWidth: '100%' }}>
+              {/* Card Content */}
+              <div className="relative z-10 group-hover:opacity-0 transition-opacity duration-500">
+                <h3 className="text-3xl md:text-4xl font-serif font-bold text-green-900 mb-4 leading-none">{project.title}</h3>
+                <p className="text-gray-800 text-sm md:text-base font-normal mb-6" style={{ color: '#222', fontWeight: 400 }}>{project.description}</p>
+                <a href={project.link} className="font-serif font-bold underline underline-offset-2 text-gray-800 flex items-center gap-1 text-base" style={{ color: '#222' }}>
+                  Casetudy
+                  <span className="arrow-rotate">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M4 8h8M8 4l4 4-4 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                  </span>
+                </a>
+              </div>
+              {/* Hover Overlay */}
+              <div className="absolute inset-0 left-0 top-0 w-full h-full bg-green-900 flex flex-col justify-center items-center transition-all duration-700 ease-in-out z-20 opacity-0 group-hover:opacity-100 group-hover:left-0">
+                <img src={phoneMockup} alt="Phone Mockup" className="w-2/3 max-w-xs mb-8 drop-shadow-xl transform -translate-x-[80%] group-hover:translate-x-0 transition-transform duration-700 ease-in-out" />
+                <a href={project.link} className="font-serif font-bold underline underline-offset-2 text-white flex items-center gap-1 text-2xl">
+                  Casestudy
+                  <span className="arrow-rotate">
+                    <svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M4 8h8M8 4l4 4-4 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                  </span>
+                </a>
+              </div>
             </div>
           ))}
         </div>
