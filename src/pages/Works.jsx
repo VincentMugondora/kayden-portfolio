@@ -36,7 +36,7 @@ const Works = () => {
         {/* Project Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {projects.map((project, idx) => (
-            <div key={idx} className="border-2 border-green-800 rounded-none p-6 md:p-8 bg-transparent flex flex-col h-full transition-colors w-full max-w-full" style={{ minHeight: '200px', minWidth: '340px' }}>
+            <div key={idx} className="border-2 border-green-800 rounded-none p-6 md:p-8 bg-transparent flex flex-col h-full transition-colors w-full max-w-full" style={{ height: '413.66px', minWidth: '340px' }}>
               <h3 className="text-5xl md:text-6xl font-serif font-bold text-green-900 mb-6 leading-none">{project.title}</h3>
               <p className="text-gray-800 text-base md:text-lg font-normal mb-8" style={{ color: '#222', fontWeight: 400 }}>{project.description}</p>
               <a href={project.link} className="font-serif font-bold underline underline-offset-2 text-gray-800 flex items-center gap-1 text-lg" style={{ color: '#222' }}>
