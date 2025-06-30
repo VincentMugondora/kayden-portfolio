@@ -17,7 +17,7 @@ const CircularText = () => (
 
 const Home = () => {
   return (
-    <section className="min-h-[76vh] bg-[radial-gradient(circle_at_60%_40%,#d1fae5_0%,#f0fdfa_100%)] text-gray-900 font-poppins flex flex-col justify-center px-4 md:px-20 lg:flex-row relative overflow-x-hidden">
+    <section className="min-h-[76vh] text-gray-900 font-poppins flex flex-col justify-center px-4 md:px-20 lg:flex-row relative overflow-x-hidden" style={{ background: 'rgba(255,255,255,0.85)' }}>
       {/* Left Content */}
       <div className="flex-1 flex flex-col justify-center py-16 md:py-24 z-10">
         <div className="relative w-fit mx-auto lg:mx-0 mb-4 flex items-center justify-center" style={{minWidth: 'max-content'}}>

@@ -122,3 +122,104 @@
 a:hover .arrow-rotate {
   transform: rotate(0deg);
 }
+
+.eight-shape-rotate {
+  animation: eight-spin 24s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes eight-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+  .circular-text-spin {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  .main-content h1, .main-content .text-5xl {
+    font-size: 2.2rem !important;
+    line-height: 2.5rem !important;
+  }
+  .main-content p, .main-content .md\:text-xl {
+    font-size: 1rem !important;
+  }
+  .main-content .w-44, .main-content .md\:w-56 {
+    width: 8rem !important;
+  }
+  .main-content .h-56, .main-content .md\:h-72 {
+    height: 10rem !important;
+  }
+  .main-content .w-40, .main-content .md\:w-64 {
+    width: 6rem !important;
+  }
+  .main-content .h-40, .main-content .md\:h-64 {
+    height: 6rem !important;
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 0.3s ease;
+}
+
+body.dark {
+  background: radial-gradient(circle at 60% 40%, #0f2221 0%, #18181b 100%) !important;
+  color: #fff !important;
+}
+body.dark .app-root,
+body.dark .main-content,
+body.dark section,
+body.dark nav,
+body.dark footer {
+  background: transparent !important;
+  color: #fff !important;
+}
+body.dark nav {
+  background: rgba(24, 24, 27, 0.95) !important;
+  border-color: #333 !important;
+}
+body.dark nav a,
+body.dark nav button {
+  color: #fff !important;
+}
+body.dark nav .text-gray-900 {
+  color: #fff !important;
+}
+body.dark nav .hover\:bg-gray-900:hover {
+  background-color: #fff !important;
+  color: #18181b !important;
+}
+/* Mobile menu dark styles */
+body.dark nav .bg-white {
+  background-color: rgba(24, 24, 27, 0.98) !important;
+}
+body.dark .main-content h1, body.dark .main-content .text-5xl {
+  color: #fff !important;
+}
+body.dark .main-content p, body.dark .main-content .md\:text-xl {
+  color: #e5e7eb !important;
+}
+body.dark .main-content a, body.dark .main-content .hover\:underline {
+  color: #fff !important;
+}
+body.dark .main-content .arrow-rotate {
+  color: #fff !important;
+}
+body.dark .eight-shape-rotate path {
+  fill: #0e9488 !important;
+  opacity: 0.25 !important;
+}
+body.dark .circular-text-spin text {
+  fill: #10b981 !important;
+}
+body.dark .w-44, body.dark .md\:w-56 {
+  background: #18181b !important;
+}
+body.dark .border-gray-900 {
+  border-color: #fff !important;
+}
