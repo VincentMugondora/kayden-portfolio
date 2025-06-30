@@ -168,20 +168,19 @@ a:hover .arrow-rotate {
 }
 
 body.dark {
-  background: radial-gradient(circle at 60% 40%, #1a1a1a 0%, #0a0a0a 100%) !important;
+  background: #000 !important;
   color: #fff !important;
 }
 body.dark .app-root,
 body.dark .main-content,
 body.dark section,
-body.dark nav,
 body.dark footer {
   background: transparent !important;
   color: #fff !important;
 }
 body.dark nav {
-  background: rgba(24, 24, 27, 0.95) !important;
-  border-color: #333 !important;
+  background: rgba(0, 0, 0, 0.95) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
 }
 body.dark nav a,
 body.dark nav button {
@@ -192,35 +191,45 @@ body.dark nav .text-gray-900 {
 }
 body.dark nav .hover\:bg-gray-900:hover {
   background-color: #fff !important;
-  color: #18181b !important;
+  color: #000 !important;
 }
 body.dark nav .bg-white {
-  background-color: rgba(24, 24, 27, 0.98) !important;
+  background-color: rgba(0, 0, 0, 0.98) !important;
 }
-body.dark .main-content h1, body.dark .main-content .text-5xl {
+body.dark .main-content h1, 
+body.dark .main-content .text-5xl {
   color: #fff !important;
 }
-body.dark .main-content p, body.dark .main-content .md\:text-xl {
-  color: #e5e7eb !important;
+body.dark .main-content p, 
+body.dark .main-content .md\:text-xl {
+  color: rgba(255, 255, 255, 0.9) !important;
 }
-body.dark .main-content a, body.dark .main-content .hover\:underline {
+body.dark .main-content a, 
+body.dark .main-content .hover\:underline {
   color: #fff !important;
 }
 body.dark .main-content .arrow-rotate {
   color: #fff !important;
 }
 body.dark .eight-shape-rotate path {
-  fill: #0e9488 !important;
-  opacity: 0.25 !important;
+  fill: rgba(255, 255, 255, 0.03) !important;
 }
 body.dark .circular-text-spin text {
-  fill: #10b981 !important;
+  fill: rgba(255, 255, 255, 0.4) !important;
 }
-body.dark .w-44, body.dark .md\:w-56 {
-  background: #18181b !important;
+body.dark .w-44, 
+body.dark .md\:w-56 {
+  background: #000 !important;
 }
 body.dark .border-gray-900 {
-  border-color: #fff !important;
+  border-color: rgba(255, 255, 255, 0.8) !important;
+}
+body.dark button.border {
+  border-color: rgba(255, 255, 255, 0.8) !important;
+}
+body.dark button:hover {
+  background: #fff !important;
+  color: #000 !important;
 }
 body.dark .text-teal-600 {
   color: #fff !important;
