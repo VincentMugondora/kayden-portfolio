@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,7 +23,7 @@ const Navbar = () => {
       </div>
       {/* Desktop Nav Links */}
       <ul className="hidden md:flex gap-8 text-base font-normal text-gray-900 font-sans mx-auto">
-        <li><a href="#" className="hover:underline underline-offset-4 transition">Works</a></li>
+        <li><Link to="/works" className="hover:underline underline-offset-4 transition">Works</Link></li>
         <li><a href="#" className="hover:underline underline-offset-4 transition">Contributions</a></li>
         <li><a href="#" className="hover:underline underline-offset-4 transition">Talks</a></li>
         <li><a href="#" className="hover:underline underline-offset-4 transition">Community</a></li>
@@ -41,7 +42,7 @@ const Navbar = () => {
       {menuOpen && (
         <div className="absolute top-full left-0 w-full bg-white bg-opacity-95 shadow-lg flex flex-col items-center py-4 z-40 md:hidden animate-fade-in">
           <ul className="flex flex-col gap-4 text-base font-normal text-gray-900 font-sans">
-            <li><a href="#" className="hover:underline underline-offset-4 transition" onClick={() => setMenuOpen(false)}>Works</a></li>
+            <li><Link to="/works" className="hover:underline underline-offset-4 transition" onClick={() => setMenuOpen(false)}>Works</Link></li>
             <li><a href="#" className="hover:underline underline-offset-4 transition" onClick={() => setMenuOpen(false)}>Contributions</a></li>
             <li><a href="#" className="hover:underline underline-offset-4 transition" onClick={() => setMenuOpen(false)}>Talks</a></li>
             <li><a href="#" className="hover:underline underline-offset-4 transition" onClick={() => setMenuOpen(false)}>Community</a></li>
