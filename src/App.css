@@ -168,7 +168,7 @@ a:hover .arrow-rotate {
 }
 
 body.dark {
-  background: radial-gradient(circle at 60% 40%, #0f2221 0%, #18181b 100%) !important;
+  background: #18181b !important;
   color: #fff !important;
 }
 body.dark .app-root,
@@ -194,7 +194,6 @@ body.dark nav .hover\:bg-gray-900:hover {
   background-color: #fff !important;
   color: #18181b !important;
 }
-/* Mobile menu dark styles */
 body.dark nav .bg-white {
   background-color: rgba(24, 24, 27, 0.98) !important;
 }
@@ -211,15 +210,18 @@ body.dark .main-content .arrow-rotate {
   color: #fff !important;
 }
 body.dark .eight-shape-rotate path {
-  fill: #0e9488 !important;
+  fill: #333 !important;
   opacity: 0.25 !important;
 }
 body.dark .circular-text-spin text {
-  fill: #10b981 !important;
+  fill: #666 !important;
 }
 body.dark .w-44, body.dark .md\:w-56 {
   background: #18181b !important;
 }
 body.dark .border-gray-900 {
   border-color: #fff !important;
+}
+body.dark .text-teal-600 {
+  color: #fff !important;
 }
