@@ -168,7 +168,7 @@ a:hover .arrow-rotate {
 }
 
 body.dark {
-  background: #18181b !important;
+  background: radial-gradient(circle at 60% 40%, #1a1a1a 0%, #0a0a0a 100%) !important;
   color: #fff !important;
 }
 body.dark .app-root,
@@ -210,11 +210,11 @@ body.dark .main-content .arrow-rotate {
   color: #fff !important;
 }
 body.dark .eight-shape-rotate path {
-  fill: #333 !important;
+  fill: #0e9488 !important;
   opacity: 0.25 !important;
 }
 body.dark .circular-text-spin text {
-  fill: #666 !important;
+  fill: #10b981 !important;
 }
 body.dark .w-44, body.dark .md\:w-56 {
   background: #18181b !important;
