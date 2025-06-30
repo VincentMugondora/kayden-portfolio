@@ -36,11 +36,11 @@ const Works = () => {
         {/* Project Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {projects.map((project, idx) => (
-            <div key={idx} className="border border-green-800 bg-white/80 dark:bg-[#18181b]/80 rounded-lg p-8 flex flex-col h-full transition-colors">
-              <h3 className="text-4xl md:text-5xl font-serif font-bold text-green-900 dark:text-green-400 mb-4">{project.title}</h3>
-              <p className="text-gray-700 dark:text-gray-200 mb-6">{project.description}</p>
-              <a href={project.link} className="font-serif font-semibold text-green-900 dark:text-green-400 hover:underline flex items-center gap-1">
-                Casestudy
+            <div key={idx} className="border-2 border-green-800 rounded-none p-8 md:p-10 bg-transparent flex flex-col h-full transition-colors" style={{ minHeight: '340px' }}>
+              <h3 className="text-5xl md:text-6xl font-serif font-bold text-green-900 mb-6 leading-none">{project.title}</h3>
+              <p className="text-gray-800 text-base md:text-lg font-normal mb-8" style={{ color: '#222', fontWeight: 400 }}>{project.description}</p>
+              <a href={project.link} className="font-serif font-bold underline underline-offset-2 text-gray-800 flex items-center gap-1 text-lg" style={{ color: '#222' }}>
+                Casetudy
                 <span className="arrow-rotate">
                   <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M4 8h8M8 4l4 4-4 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 </span>
