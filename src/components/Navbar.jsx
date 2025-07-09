@@ -23,10 +23,11 @@ const Navbar = () => {
       </div>
       {/* Desktop Nav Links */}
       <ul className="hidden md:flex gap-8 text-base font-normal text-gray-900 font-sans mx-auto">
+      <li><Link to="/" className="hover:underline underline-offset-4 transition">Home</Link></li>
         <li><Link to="/works" className="hover:underline underline-offset-4 transition">Works</Link></li>
-        <li><a href="#" className="hover:underline underline-offset-4 transition">Contributions</a></li>
-        <li><a href="#" className="hover:underline underline-offset-4 transition">Talks</a></li>
-        <li><a href="#" className="hover:underline underline-offset-4 transition">Community</a></li>
+        {/* <li><a href="#" className="hover:underline underline-offset-4 transition">Contributions</a></li> */}
+        {/* <li><a href="#" className="hover:underline underline-offset-4 transition">Talks</a></li> */}
+        {/* <li><a href="#" className="hover:underline underline-offset-4 transition">Community</a></li> */}
         <li><Link to="/contact" className="hover:underline underline-offset-4 transition">Contact me</Link></li>
       </ul>
       {/* Desktop Resume & Theme Icon */}
