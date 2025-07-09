@@ -39,17 +39,17 @@ const Home = () => {
           I'm a Senior Product Designer (UI, UX), and a Design mentor. I am passionate about creating a user-centered design, gathering and translating user data into design decisions and products.
         </p>
         <div className="flex flex-wrap gap-8 font-semibold text-base md:text-lg dark:font-serif dark:text-sm dark:tracking-wide text-black">
-          <a href="#" className="group hover:underline flex items-center gap-1 text-black">
-            Resume
-            <svg className="hidden dark:inline transition-transform -rotate-45 group-hover:rotate-0 text-black" width="16" height="16" viewBox="0 0 16 16"><path d="M4 8h8M8 4l4 4-4 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          <a href="#" className="group flex items-center gap-1 hover:underline hover:decoration-green-600 hover:underline-offset-4 decoration-2">
+            <span className="transition-colors group-hover:text-green-600">Resume</span>
+            <svg className="hidden dark:inline transition-transform -rotate-45 group-hover:rotate-0 group-hover:text-green-600" width="16" height="16" viewBox="0 0 16 16"><path d="M4 8h8M8 4l4 4-4 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </a>
-          <a href="#" className="group hover:underline flex items-center gap-1 text-black">
-            Linkedin
-            <svg className="hidden dark:inline transition-transform -rotate-45 group-hover:rotate-0 text-black" width="16" height="16" viewBox="0 0 16 16"><path d="M4 8h8M8 4l4 4-4 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          <a href="#" className="group flex items-center gap-1 hover:underline hover:decoration-green-600 hover:underline-offset-4 decoration-2">
+            <span className="transition-colors group-hover:text-green-600">Linkedin</span>
+            <svg className="hidden dark:inline transition-transform -rotate-45 group-hover:rotate-0 group-hover:text-green-600" width="16" height="16" viewBox="0 0 16 16"><path d="M4 8h8M8 4l4 4-4 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </a>
-          <a href="#" className="group hover:underline flex items-center gap-1 text-black">
-            Behance
-            <svg className="hidden dark:inline transition-transform -rotate-45 group-hover:rotate-0 text-black" width="16" height="16" viewBox="0 0 16 16"><path d="M4 8h8M8 4l4 4-4 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          <a href="#" className="group flex items-center gap-1 hover:underline hover:decoration-green-600 hover:underline-offset-4 decoration-2">
+            <span className="transition-colors group-hover:text-green-600">Behance</span>
+            <svg className="hidden dark:inline transition-transform -rotate-45 group-hover:rotate-0 group-hover:text-green-600" width="16" height="16" viewBox="0 0 16 16"><path d="M4 8h8M8 4l4 4-4 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </a>
         </div>
       </div>
