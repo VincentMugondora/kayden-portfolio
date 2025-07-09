@@ -21,19 +21,19 @@ const Home = () => {
       {/* Left Content */}
       <div className="flex-1 flex flex-col justify-center py-16 md:py-24 z-10 dark:py-20">
         <div className="relative w-fit mx-auto lg:mx-0 mb-4 flex items-center justify-center dark:mb-6" style={{minWidth: 'max-content'}}>
+          {/* CircularText behind heading */}
+          <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0 pointer-events-none">
+            <CircularText />
+          </span>
           <span className="block relative z-10 dark:hidden">
             <h1 className="text-5xl md:text-7xl lg:text-7xl font-bold mb-2 whitespace-nowrap inline-block align-middle relative text-black">
               Hi, I am Munya
             </h1>
           </span>
           {/* Dark mode heading */}
-          <h1 className="hidden dark:block text-black text-5xl md:text-7xl font-serif font-bold relative whitespace-nowrap">
+          <h1 className="hidden dark:block text-black text-5xl md:text-7xl font-serif font-bold relative whitespace-nowrap z-10">
             Hi, I am Munya
           </h1>
-          {/* CircularText at the end of Munya, partially behind */}
-          <span className="absolute right-[-40px] top-1/2 -translate-y-1/2 z-0 pointer-events-none">
-            <CircularText />
-          </span>
         </div>
         <p className="md:text-xl max-w-xl mx-auto lg:mx-0 mb-8 dark:text-black dark:text-base dark:md:text-lg dark:mb-10 dark:leading-relaxed text-black">
           I'm a Senior Product Designer (UI, UX), and a Design mentor. I am passionate about creating a user-centered design, gathering and translating user data into design decisions and products.
