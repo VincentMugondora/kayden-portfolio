@@ -41,23 +41,14 @@ const Home = () => {
         <div className="flex flex-wrap gap-8 font-semibold text-base md:text-lg dark:font-serif dark:text-sm dark:tracking-wide text-black">
           <a href="#" className="group hover:underline flex items-center gap-1 text-black">
             Resume
-            <span className="arrow-rotate dark:hidden">
-              <svg className="transition-transform -rotate-45 group-hover:rotate-0 text-black" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M4 8h8M8 4l4 4-4 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            </span>
             <svg className="hidden dark:inline transition-transform -rotate-45 group-hover:rotate-0 text-black" width="16" height="16" viewBox="0 0 16 16"><path d="M4 8h8M8 4l4 4-4 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </a>
           <a href="#" className="group hover:underline flex items-center gap-1 text-black">
             Linkedin
-            <span className="arrow-rotate dark:hidden">
-              <svg className="transition-transform -rotate-45 group-hover:rotate-0 text-black" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M4 8h8M8 4l4 4-4 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            </span>
             <svg className="hidden dark:inline transition-transform -rotate-45 group-hover:rotate-0 text-black" width="16" height="16" viewBox="0 0 16 16"><path d="M4 8h8M8 4l4 4-4 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </a>
           <a href="#" className="group hover:underline flex items-center gap-1 text-black">
             Behance
-            <span className="arrow-rotate dark:hidden">
-              <svg className="transition-transform -rotate-45 group-hover:rotate-0 text-black" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M4 8h8M8 4l4 4-4 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            </span>
             <svg className="hidden dark:inline transition-transform -rotate-45 group-hover:rotate-0 text-black" width="16" height="16" viewBox="0 0 16 16"><path d="M4 8h8M8 4l4 4-4 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </a>
         </div>
