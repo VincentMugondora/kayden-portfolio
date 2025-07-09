@@ -133,6 +133,14 @@ a:hover .arrow-rotate {
   100% { transform: rotate(360deg); }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Vollkorn', serif;
+}
+
+body, html {
+  font-family: 'Work Sans', sans-serif;
+}
+
 @media (max-width: 768px) {
   .circular-text-spin {
     width: 120px !important;
