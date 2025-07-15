@@ -23,7 +23,7 @@ const Contact = () => {
           <h1 className="text-5xl md:text-5xl font-serif font-bold leading-tight mb-2 relative z-10 whitespace-nowrap">
             Do you have any Ideas?<br />Let’s create the future
           </h1>
-          <span className="absolute right-[-40px] top-1/2 -translate-y-1/2 z-0 pointer-events-none">
+          <span className="absolute right-[-10px] top-1/2 -translate-y-1/2 z-0 pointer-events-none">
             <CircularText />
           </span>
         </div>
