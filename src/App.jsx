@@ -10,11 +10,10 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <div className="app-root relative overflow-hidden">
-      {/* Rotating Green Eight Shape */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
-        <svg width="900" height="900" viewBox="0 0 900 900" className="eight-shape-rotate" style={{ opacity: 0.15 }}>
-          <path d="M450,230c-110-80-250,80-180,200s250,120,320,0-30-280-140-200zm0,440c-110,80-250-80-180-200s250-120,320,0-30,280-140,200z" fill="#10b981" />
-        </svg>
+      {/* Glassy Revolving Green Circles Background */}
+      <div className="fixed inset-0 -z-10 bg-black overflow-hidden">
+        <div className="absolute w-[60vw] h-[60vw] left-[-20vw] top-[-10vw] rounded-full bg-[#0d3d2c] opacity-60 blur-3xl animate-spin-slow" />
+        <div className="absolute w-[70vw] h-[70vw] right-[-25vw] top-[10vw] rounded-full bg-[#0d3d2c] opacity-60 blur-3xl animate-spin-reverse-slower" />
       </div>
       {/* Main Content */}
       <div className="relative z-10">
