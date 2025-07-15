@@ -6,19 +6,25 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Works from './pages/Works';
 import Contact from './pages/Contact';
+import Ellipse4 from './assets/Ellipse 4.svg';
+import Ellipse5 from './assets/Ellipse 5.svg';
 
 function App() {
   return (
     <div className="app-root relative overflow-hidden">
-      {/* Glassy Revolving Green Blobs Background */}
+      {/* Glassy Revolving SVG Blobs Background */}
       <div className="fixed inset-0 -z-10 bg-white overflow-hidden">
-        {/* Blob 1: Bright Green */}
-        <div className="absolute w-[100vw] h-[100vw] left-[-30vw] top-[-25vw] opacity-60 blur-[120px] animate-spin-slow"
-          style={{ background: '#1ED291', borderRadius: '42% 58% 63% 37% / 55% 45% 60% 40%' }}
+        <img
+          src={Ellipse4}
+          alt=""
+          className="absolute w-[120vw] left-[-30vw] top-[-25vw] opacity-80 animate-spin-slow pointer-events-none select-none"
+          style={{ filter: 'blur(0px)' }}
         />
-        {/* Blob 2: Deep Green */}
-        <div className="absolute w-[120vw] h-[120vw] right-[-45vw] top-[15vw] opacity-60 blur-[140px] animate-spin-reverse-slower"
-          style={{ background: '#00754B', borderRadius: '60% 40% 55% 45% / 40% 60% 45% 55%' }}
+        <img
+          src={Ellipse5}
+          alt=""
+          className="absolute w-[110vw] right-[-40vw] top-[10vw] opacity-80 animate-spin-reverse-slower pointer-events-none select-none"
+          style={{ filter: 'blur(0px)' }}
         />
       </div>
       {/* Main Content */}
