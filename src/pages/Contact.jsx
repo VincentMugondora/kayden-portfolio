@@ -2,11 +2,11 @@ import React from 'react';
 import personImg from '../assets/avatar.png';
 
 const CircularText = () => (
-  <svg width="180" height="180" viewBox="0 0 180 180" className="absolute left-[60%] top-[-30px] md:left-[48%] md:top-[-40px] z-0 opacity-80 pointer-events-none">
+  <svg width="160" height="160" viewBox="0 0 160 160" className="circular-text-spin absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0 opacity-80 pointer-events-none">
     <defs>
-      <path id="circle" d="M90,90 m-75,0 a75,75 0 1,1 150,0 a75,75 0 1,1 -150,0" />
+      <path id="circle" d="M80,80 m-65,0 a65,65 0 1,1 130,0 a65,65 0 1,1 -130,0" />
     </defs>
-    <text fontSize="14" fill="#0e9488" fontFamily="Georgia, serif" letterSpacing="2">
+    <text fontSize="12" fill="#0e9488" fontFamily="Georgia, serif" letterSpacing="2">
       <textPath xlinkHref="#circle" startOffset="0">
         DESIGN IS LIFE · DESIGN IS LIFE · DESIGN IS LIFE ·
       </textPath>
