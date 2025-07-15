@@ -1,5 +1,5 @@
 import React from 'react';
-import personImg from '../assets/person.png';
+import personImg from '../assets/avatar.png';
 
 const CircularText = () => (
   <svg width="180" height="180" viewBox="0 0 180 180" className="absolute left-[60%] top-[-30px] md:left-[48%] md:top-[-40px] z-0 opacity-80 pointer-events-none">
@@ -46,7 +46,7 @@ const Contact = () => {
       </div>
       {/* Right: Image */}
       <div className="flex-1 flex items-center justify-center mt-12 md:mt-0">
-        <div className="w-[340px] h-[340px] md:w-[420px] md:h-[420px] rounded-full bg-[#d1fae5] flex items-center justify-center relative shadow-xl">
+        <div className="rounded-full bg-[#d1fae5] flex items-center justify-center relative shadow-xl">
           <img src={personImg} alt="Person" className="w-60 h-60 md:w-80 md:h-80 object-contain" />
         </div>
       </div>
