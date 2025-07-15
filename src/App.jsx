@@ -18,13 +18,13 @@ function App() {
           <img
             src={Ellipse4}
             alt=""
-            className="w-[35vw] mb-[-8vw] pointer-events-none select-none"
+            className="w-[60vw] mb-[-12vw] pointer-events-none select-none"
             style={{ filter: 'blur(0px)' }}
           />
           <img
             src={Ellipse5}
             alt=""
-            className="w-[35vw] mt-[-8vw] pointer-events-none select-none"
+            className="w-[60vw] mt-[-12vw] pointer-events-none select-none"
             style={{ filter: 'blur(0px)' }}
           />
         </div>
