@@ -16,14 +16,14 @@ const CircularText = () => (
 
 const Contact = () => {
   return (
-    <section className="min-h-[90vh] w-full px-4 md:px-24 py-16 relative bg-[radial-gradient(circle_at_60%_40%,#d1fae5_0%,#e0f7ef_100%)] flex flex-col md:flex-row items-start justify-between transition-colors">
+    <section className="h-[90vh] w-full px-4 md:px-24 py-16 relative bg-[radial-gradient(circle_at_60%_40%,#d1fae5_0%,#e0f7ef_100%)] flex flex-col md:flex-row items-start justify-between transition-colors">
       {/* Left: Heading and Form */}
       <div className="flex-1 max-w-2xl z-10">
         <div className="relative mb-16">
           <h1 className="text-5xl md:text-5xl font-serif font-bold leading-tight mb-2">Do you have any Ideas?<br />Let’s create the future</h1>
           <CircularText />
         </div>
-        <form className="flex flex-col gap-10 mt-8">
+        <form className="flex flex-col gap-10 mt-5">
           <div>
             <label className="block mb-2 text-base font-serif">Name</label>
             <input type="text" className="w-full bg-transparent border-0 border-b-2 border-gray-700 focus:border-black focus:border-b-2 focus:ring-0 text-lg font-sans outline-none transition-colors" />
