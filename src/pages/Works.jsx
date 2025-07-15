@@ -1,81 +1,250 @@
-import React from 'react';
-import phoneMockup from '../assets/image.png';
+import React, { useState } from 'react';
+import { Moon, Sun, ExternalLink } from 'lucide-react';
 
-const projects = [
-  {
-    title: 'Food Donation App',
-    description:
-      'A platform designed to reduce food waste by connecting food donors, such as restaurants, grocery stores, and individuals, with NGOs that distribute food to those in need. The platform facilitates the donation process, ensuring that surplus food reaches those who need it the most, while contributing to a more sustainable community.',
-    link: '#',
-  },
-  {
-    title: 'Food Donation App',
-    description:
-      'A platform designed to reduce food waste by connecting food donors, such as restaurants, grocery stores, and individuals, with NGOs that distribute food to those in need. The platform facilitates the donation process, ensuring that surplus food reaches those who need it the most, while contributing to a more sustainable community.',
-    link: '#',
-  },
-  {
-    title: 'Food Donation App',
-    description:
-      'A platform designed to reduce food waste by connecting food donors, such as restaurants, grocery stores, and individuals, with NGOs that distribute food to those in need. The platform facilitates the donation process, ensuring that surplus food reaches those who need it the most, while contributing to a more sustainable community.',
-    link: '#',
-  },
-];
+export default function Portfolio() {
+  const [darkMode, setDarkMode] = useState(false);
 
-const categories = [
-  'Mobile Application',
-  'Branding',
-];
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
 
-const Works = () => {
   return (
-    <section className="min-h-[80vh] w-full px-4 md:px-16 py-12 relative bg-[radial-gradient(circle_at_60%_40%,#d1fae5_0%,#f0fdfa_100%)] dark:bg-[#18181b] transition-colors">
-      {/* Faded Works Heading */}
-      <h1 className="absolute left-4 top-8 text-[7vw] font-serif font-bold text-gray-300 opacity-30 select-none pointer-events-none z-0">Works</h1>
-      <div className="relative z-10">
-        <h2 className="text-2xl md:text-3xl font-serif font-semibold mb-8 mt-8">Website Projects</h2>
+    <div className={`min-h-screen transition-colors duration-300 ${
+      darkMode ? 'bg-gray-900 text-white' : 'bg-gradient-to-br from-green-50 to-green-100 text-gray-900'
+    }`}>
+      {/* Navigation */}
+      {/* <nav className="flex justify-between items-center px-8 py-6">
+        <div className="text-2xl font-bold">
+          Munyaradzi
+        </div>
+        
+        <div className="flex space-x-8">
+          <a href="#works" className="hover:text-green-600 transition-colors">Works</a>
+          <a href="#contributions" className="hover:text-green-600 transition-colors">Contributions</a>
+          <a href="#talks" className="hover:text-green-600 transition-colors">Talks</a>
+          <a href="#community" className="hover:text-green-600 transition-colors">Community</a>
+          <a href="#contact" className="hover:text-green-600 transition-colors">Contact me</a>
+        </div>
+        
+        <div className="flex items-center space-x-4">
+          <button className="px-4 py-2 border border-gray-400 rounded hover:bg-gray-100 transition-colors">
+            My Resume
+          </button>
+          <button
+            onClick={toggleDarkMode}
+            className="p-2 rounded-full hover:bg-gray-200 transition-colors"
+          >
+            {darkMode ? <Sun size={20} /> : <Moon size={20} />}
+          </button>
+        </div>
+      </nav> */}
+
+      {/* Hero Section */}
+      <div className="px-8 py-16">
+        <div className="mb-4">
+          <h1 className="text-9xl font-bold opacity-20 mb-8">Works</h1>
+        </div>
+        
+        <h2 className="text-4xl font-bold mb-12 -mt-16">Website Projects</h2>
+        
         {/* Project Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {projects.map((project, idx) => (
-            <div key={idx} className="relative overflow-hidden border-2 border-green-800 rounded-none p-6 md:p-8 bg-transparent flex flex-col h-full transition-colors w-full max-w-full group" style={{ width: '39.375rem', height: '25.85rem', minWidth: '340px', maxWidth: '100%' }}>
-              {/* Card Content */}
-              <div className="relative z-10 group-hover:opacity-0 transition-opacity duration-500">
-                <h3 className="text-3xl md:text-4xl font-serif font-bold text-green-900 mb-4 leading-none">{project.title}</h3>
-                <p className="text-gray-800 text-sm md:text-base font-normal mb-6" style={{ color: '#222', fontWeight: 400 }}>{project.description}</p>
-                <a href={project.link} className="font-serif font-bold underline underline-offset-2 text-gray-800 flex items-center gap-1 text-base" style={{ color: '#222' }}>
-                  Casetudy
-                  <span className="arrow-rotate">
-                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M4 8h8M8 4l4 4-4 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                  </span>
-                </a>
-              </div>
-              {/* Hover Overlay */}
-              <div className="absolute inset-0 left-0 top-0 w-full h-full bg-green-900 flex flex-col justify-center items-center transition-all duration-700 ease-in-out z-20 opacity-0 group-hover:opacity-100 group-hover:left-0">
-                <img src={phoneMockup} alt="Phone Mockup" className="w-2/3 max-w-xs mb-8 drop-shadow-xl transform -translate-x-[80%] group-hover:translate-x-0 transition-transform duration-700 ease-in-out" />
-                <a href={project.link} className="font-serif font-bold underline underline-offset-2 text-white flex items-center gap-1 text-2xl">
-                  Casestudy
-                  <span className="arrow-rotate">
-                    <svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M4 8h8M8 4l4 4-4 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                  </span>
-                </a>
-              </div>
+          {/* Card 1 */}
+          <div className={`group relative p-8 rounded-lg border-2 transition-all duration-500 hover:shadow-lg overflow-hidden ${
+            darkMode ? 'bg-gray-800 border-gray-700 hover:bg-green-600' : 'bg-green-50 border-green-600 hover:bg-green-600'
+          }`}>
+            {/* Default Content */}
+            <div className="transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-4">
+              <h3 className="text-4xl font-bold text-green-600 mb-4 group-hover:text-white">
+                Food<br />Donation App
+              </h3>
+              <p className="text-sm mb-6 leading-relaxed">
+                A platform designed to reduce food waste by connecting food donors, such 
+                as restaurants, grocery stores, and individuals, with NGOs that distribute 
+                food to those in need. The platform facilitates the donation process, 
+                ensuring that surplus food reaches those who need it the most, while 
+                contributing to a more sustainable community.
+              </p>
+              <a href="#" className="inline-flex items-center text-sm font-medium hover:text-green-600 transition-colors">
+                Casestudy <ExternalLink size={16} className="ml-1" />
+              </a>
             </div>
-          ))}
+
+            {/* Hover Content */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-8 group-hover:translate-y-0">
+              {/* Phone Mockups */}
+              <div className="relative mb-8">
+                {/* Phone 1 */}
+                <div className="relative w-32 h-56 bg-black rounded-3xl p-1 transform -rotate-12 -translate-x-4">
+                  <div className="w-full h-full bg-white rounded-3xl flex flex-col items-center justify-center relative overflow-hidden">
+                    <div className="absolute top-4 w-12 h-1 bg-black rounded-full"></div>
+                    <div className="text-lg font-bold text-orange-500 mb-2">FOODIN.DO</div>
+                    <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                  </div>
+                </div>
+                
+                {/* Phone 2 */}
+                <div className="absolute -top-4 left-12 w-32 h-56 bg-black rounded-3xl p-1 transform rotate-6">
+                  <div className="w-full h-full bg-white rounded-3xl flex flex-col relative overflow-hidden">
+                    <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-black rounded-full"></div>
+                    <div className="flex-1 bg-orange-100 m-1 mt-8 rounded-3xl relative">
+                      <div className="absolute top-4 left-4 text-xs font-bold">Good Morning</div>
+                      <div className="absolute top-8 left-4 text-xs text-gray-600">Zimbabwean!</div>
+                      <div className="absolute top-16 left-4 right-4 h-16 bg-orange-300 rounded-xl"></div>
+                      <div className="absolute bottom-16 left-4 right-4 grid grid-cols-2 gap-2">
+                        <div className="h-8 bg-orange-400 rounded"></div>
+                        <div className="h-8 bg-orange-400 rounded"></div>
+                      </div>
+                      <div className="absolute bottom-8 left-4 right-4 h-6 bg-orange-500 rounded"></div>
+                      <div className="absolute bottom-2 left-4 right-4 h-4 bg-gray-300 rounded"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Casestudy Link */}
+              <a href="#" className="inline-flex items-center text-sm font-medium text-white hover:text-orange-200 transition-colors underline">
+                Casestudy <ExternalLink size={16} className="ml-1" />
+              </a>
+            </div>
+          </div>
+
+          {/* Card 2 */}
+          <div className={`group relative p-8 rounded-lg border-2 transition-all duration-500 hover:shadow-lg overflow-hidden ${
+            darkMode ? 'bg-gray-800 border-gray-700 hover:bg-green-600' : 'bg-green-50 border-green-600 hover:bg-green-600'
+          }`}>
+            {/* Default Content */}
+            <div className="transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-4">
+              <h3 className="text-4xl font-bold text-green-600 mb-4 group-hover:text-white">
+                Food<br />Donation App
+              </h3>
+              <p className="text-sm mb-6 leading-relaxed">
+                A platform designed to reduce food waste by connecting food donors, such 
+                as restaurants, grocery stores, and individuals, with NGOs that distribute 
+                food to those in need. The platform facilitates the donation process, 
+                ensuring that surplus food reaches those who need it the most, while 
+                contributing to a more sustainable community.
+              </p>
+              <a href="#" className="inline-flex items-center text-sm font-medium hover:text-green-600 transition-colors">
+                Casestudy <ExternalLink size={16} className="ml-1" />
+              </a>
+            </div>
+
+            {/* Hover Content */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-8 group-hover:translate-y-0">
+              {/* Phone Mockups */}
+              <div className="relative mb-8">
+                {/* Phone 1 */}
+                <div className="relative w-32 h-56 bg-black rounded-3xl p-1 transform -rotate-12 -translate-x-4">
+                  <div className="w-full h-full bg-white rounded-3xl flex flex-col items-center justify-center relative overflow-hidden">
+                    <div className="absolute top-4 w-12 h-1 bg-black rounded-full"></div>
+                    <div className="text-lg font-bold text-orange-500 mb-2">FOODIN.DO</div>
+                    <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                  </div>
+                </div>
+                
+                {/* Phone 2 */}
+                <div className="absolute -top-4 left-12 w-32 h-56 bg-black rounded-3xl p-1 transform rotate-6">
+                  <div className="w-full h-full bg-white rounded-3xl flex flex-col relative overflow-hidden">
+                    <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-black rounded-full"></div>
+                    <div className="flex-1 bg-orange-100 m-1 mt-8 rounded-3xl relative">
+                      <div className="absolute top-4 left-4 text-xs font-bold">Good Morning</div>
+                      <div className="absolute top-8 left-4 text-xs text-gray-600">Zimbabwean!</div>
+                      <div className="absolute top-16 left-4 right-4 h-16 bg-orange-300 rounded-xl"></div>
+                      <div className="absolute bottom-16 left-4 right-4 grid grid-cols-2 gap-2">
+                        <div className="h-8 bg-orange-400 rounded"></div>
+                        <div className="h-8 bg-orange-400 rounded"></div>
+                      </div>
+                      <div className="absolute bottom-8 left-4 right-4 h-6 bg-orange-500 rounded"></div>
+                      <div className="absolute bottom-2 left-4 right-4 h-4 bg-gray-300 rounded"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Casestudy Link */}
+              <a href="#" className="inline-flex items-center text-sm font-medium text-white hover:text-orange-200 transition-colors underline">
+                Casestudy <ExternalLink size={16} className="ml-1" />
+              </a>
+            </div>
+          </div>
+
+          {/* Card 3 */}
+          <div className={`group relative p-8 rounded-lg border-2 transition-all duration-500 hover:shadow-lg overflow-hidden ${
+            darkMode ? 'bg-gray-800 border-gray-700 hover:bg-green-600' : 'bg-green-50 border-green-600 hover:bg-green-600'
+          }`}>
+            {/* Default Content */}
+            <div className="transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-4">
+              <h3 className="text-4xl font-bold text-green-600 mb-4 group-hover:text-white">
+                Food<br />Donation
+              </h3>
+              <p className="text-sm mb-6 leading-relaxed">
+                A platform designed to reduce food waste by connecting food donors, such 
+                as restaurants, grocery stores, and individuals, with NGOs that distribute 
+                food to those in need. The platform facilitates the donation process, 
+                ensuring that surplus food reaches those who need it the most, while 
+                contributing to a more sustainable community.
+              </p>
+              <a href="#" className="inline-flex items-center text-sm font-medium hover:text-green-600 transition-colors">
+                Casestudy <ExternalLink size={16} className="ml-1" />
+              </a>
+            </div>
+
+            {/* Hover Content */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-8 group-hover:translate-y-0">
+              {/* Phone Mockups */}
+              <div className="relative mb-8">
+                {/* Phone 1 */}
+                <div className="relative w-32 h-56 bg-black rounded-3xl p-1 transform -rotate-12 -translate-x-4">
+                  <div className="w-full h-full bg-white rounded-3xl flex flex-col items-center justify-center relative overflow-hidden">
+                    <div className="absolute top-4 w-12 h-1 bg-black rounded-full"></div>
+                    <div className="text-lg font-bold text-orange-500 mb-2">FOODIN.DO</div>
+                    <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                  </div>
+                </div>
+                
+                {/* Phone 2 */}
+                <div className="absolute -top-4 left-12 w-32 h-56 bg-black rounded-3xl p-1 transform rotate-6">
+                  <div className="w-full h-full bg-white rounded-3xl flex flex-col relative overflow-hidden">
+                    <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-black rounded-full"></div>
+                    <div className="flex-1 bg-orange-100 m-1 mt-8 rounded-3xl relative">
+                      <div className="absolute top-4 left-4 text-xs font-bold">Good Morning</div>
+                      <div className="absolute top-8 left-4 text-xs text-gray-600">Zimbabwean!</div>
+                      <div className="absolute top-16 left-4 right-4 h-16 bg-orange-300 rounded-xl"></div>
+                      <div className="absolute bottom-16 left-4 right-4 grid grid-cols-2 gap-2">
+                        <div className="h-8 bg-orange-400 rounded"></div>
+                        <div className="h-8 bg-orange-400 rounded"></div>
+                      </div>
+                      <div className="absolute bottom-8 left-4 right-4 h-6 bg-orange-500 rounded"></div>
+                      <div className="absolute bottom-2 left-4 right-4 h-4 bg-gray-300 rounded"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Casestudy Link */}
+              <a href="#" className="inline-flex items-center text-sm font-medium text-white hover:text-orange-200 transition-colors underline">
+                Casestudy <ExternalLink size={16} className="ml-1" />
+              </a>
+            </div>
+          </div>
         </div>
-        {/* Categories */}
-        <div className="flex flex-wrap gap-8 text-lg font-serif font-medium mt-8">
-          {categories.map((cat, idx) => (
-            <span key={idx} className="hover:underline flex items-center gap-1">
-              {cat}
-              <span className="arrow-rotate">
-                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M4 8h8M8 4l4 4-4 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
-              </span>
-            </span>
-          ))}
+
+        {/* Category Links */}
+        <div className="flex space-x-8">
+          <a href="#" className="inline-flex items-center text-lg font-medium hover:text-green-600 transition-colors">
+            Mobile Application <ExternalLink size={20} className="ml-2" />
+          </a>
+          <a href="#" className="inline-flex items-center text-lg font-medium hover:text-green-600 transition-colors">
+            Branding <ExternalLink size={20} className="ml-2" />
+          </a>
         </div>
       </div>
-    </section>
-  );
-};
 
-export default Works; 
+      {/* Footer Text */}
+      <div className="fixed bottom-8 right-8 text-sm opacity-50 transform rotate-90 origin-bottom-right">
+        DESIGN IS LIFE
+      </div>
+    </div>
+  );
+}
