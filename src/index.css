@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+
+.vollkorn {
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
+  }

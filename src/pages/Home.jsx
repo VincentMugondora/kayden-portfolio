@@ -22,7 +22,7 @@ const Home = () => {
       <div className="flex-1 flex flex-col justify-center py-16 md:py-24 z-10 dark:py-20">
         <div className="relative w-fit mx-auto lg:mx-0 mb-4 flex items-center justify-center dark:mb-6" style={{minWidth: 'max-content'}}>
           <span className="block relative z-10 dark:hidden">
-            <h1 className="text-5xl md:text-7xl lg:text-7xl font-bold mb-2 whitespace-nowrap inline-block align-middle relative text-black">
+            <h1 className="text-5xl vollkorn md:text-7xl lg:text-7xl font-bold mb-2 whitespace-nowrap inline-block align-middle relative text-black">
               Hi, I am Munya
             </h1>
           </span>
