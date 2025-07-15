@@ -45,9 +45,9 @@ const Contact = () => {
         </form>
       </div>
       {/* Right: Image */}
-      <div className="flex-1 flex items-center justify-center mt-12 md:mt-0">
-        <div className="rounded-full bg-[#d1fae5] flex items-center justify-center relative shadow-xl">
-          <img src={personImg} alt="Person" className="w-60 h-60 md:w-80 md:h-80 object-contain" />
+      <div className="h-[80vh] flex-1 flex items-center justify-center mt-32 md:mt-0">
+        <div className="">
+          <img src={personImg} alt="Person" className="w-60 h-60 md:w-80 md:h-80 object-cover" />
         </div>
       </div>
     </section>
