@@ -36,9 +36,9 @@ const Contact = () => {
             <label className="block mb-2 text-base font-serif">Message</label>
             <textarea rows={2} className="w-full bg-transparent border-0 border-b-2 border-gray-700 focus:border-black focus:border-b-2 focus:ring-0 text-lg font-sans outline-none resize-none transition-colors" />
           </div>
-          <button type="submit" className="mt-2 flex items-center gap-2 text-lg font-serif font-semibold hover:underline underline-offset-2 w-fit pl-0">
-            SEND
-            <span className="arrow-rotate">
+          <button type="submit" className="group mt-2 flex items-center gap-2 text-lg font-serif font-semibold hover:underline underline-offset-2 w-fit pl-0 transition-colors">
+            <span className="group-hover:text-green-600 transition-colors">SEND</span>
+            <span className="arrow-rotate transition-transform group-hover:rotate-90 group-hover:text-green-600 group-hover:underline">
               <svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8 12V4M4 8l4-4 4 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </span>
           </button>
