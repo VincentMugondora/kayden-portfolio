@@ -10,21 +10,22 @@ import Ellipse4 from './assets/Ellipse 4.svg';
 import Ellipse5 from './assets/Ellipse 5.svg';
 
 function App() {
+
   return (
     <div className="app-root relative overflow-hidden">
-      {/* Glassy Revolving SVG Blobs Eight Shape Background */}
-      <div className="fixed inset-0 -z-10 bg-white overflow-hidden flex items-center justify-center">
-        <div className="relative flex flex-col items-center justify-center animate-spin-slow" style={{ width: '100vw', height: '100vw' }}>
+      {/* Always show revolving SVG blobs in the background */}
+      <div className="fixed inset-0 -z-10 bg-black overflow-hidden flex items-center justify-center">
+        <div className="relative flex flex-col items-center justify-center animate-spin-slow" style={{ width: '40vw', height: '80vw' }}>
           <img
             src={Ellipse4}
             alt=""
-            className="w-[70vw] mb-[-8vw]"
+            className="w-[100vw] mb-[-8vw] pointer-events-none select-none"
             style={{ filter: 'blur(0px)' }}
           />
           <img
             src={Ellipse5}
             alt=""
-            className="w-[70vw] mt-[-8vw]"
+            className="w-[100vw] mt-[-8vw] pointer-events-none select-none"
             style={{ filter: 'blur(0px)' }}
           />
         </div>
