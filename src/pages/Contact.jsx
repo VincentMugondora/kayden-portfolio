@@ -20,7 +20,7 @@ const Contact = () => {
       {/* Left: Heading and Form */}
       <div className="flex-1 max-w-2xl z-10">
         <div className="relative mb-16">
-          <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight mb-2">Do you have any Ideas?<br />Let’s create the future</h1>
+          <h1 className="text-5xl md:text-5xl font-serif font-bold leading-tight mb-2">Do you have any Ideas?<br />Let’s create the future</h1>
           <CircularText />
         </div>
         <form className="flex flex-col gap-10 mt-8">
