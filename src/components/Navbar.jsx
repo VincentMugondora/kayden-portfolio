@@ -16,7 +16,7 @@ const Navbar = () => {
   const handleToggleDark = () => setDarkMode((d) => !d);
 
   return (
-    <nav className="w-full border-b border-gray-300 px-6 py-4 font-serif flex items-center justify-between sticky top-0 z-30 bg-opacity-85" style={{ background: 'rgba(255,255,255,0.85)' }}>
+    <nav className="w-full border border-white/40 bg-white/30 backdrop-blur-lg shadow px-6 py-4 font-serif flex items-center justify-between sticky top-0 z-30">
       {/* Logo */}
       <div className="text-2xl font-bold tracking-tight select-none">
         Munyaradzi<span className="text-teal-600">.</span>
@@ -41,7 +41,7 @@ const Navbar = () => {
       </button>
       {/* Mobile Dropdown */}
       {menuOpen && (
-        <div className="absolute top-full left-0 w-full bg-white bg-opacity-95 shadow-lg flex flex-col items-center py-4 z-40 md:hidden animate-fade-in">
+        <div className="absolute top-full left-0 w-full bg-white/30 backdrop-blur-lg shadow-lg flex flex-col items-center py-4 z-40 md:hidden animate-fade-in border border-white/40">
           <ul className="flex flex-col gap-4 text-base font-normal text-gray-900 font-sans">
             <li><Link to="/works" className="hover:underline underline-offset-4 transition" onClick={() => setMenuOpen(false)}>Works</Link></li>
             <li><a href="#" className="hover:underline underline-offset-4 transition" onClick={() => setMenuOpen(false)}>Contributions</a></li>

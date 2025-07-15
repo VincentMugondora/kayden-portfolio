@@ -2,7 +2,7 @@ import React from 'react';
 import { FaTwitter, FaDribbble, FaBehance, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => (
-  <footer className="w-full flex flex-col md:flex-row items-center justify-between px-4 md:px-8 py-6 font-sans text-black gap-4 md:gap-0" style={{ background: 'rgba(255,255,255,0.85)' }}>
+  <footer className="w-full flex flex-col md:flex-row items-center justify-between px-4 md:px-8 py-6 font-sans text-black gap-4 md:gap-0 bg-white/30 backdrop-blur-lg border border-white/40 shadow">
     <div className="flex gap-6 md:gap-8 text-xl md:text-2xl">
       <a href="#" aria-label="Twitter"><FaTwitter /></a>
       <a href="#" aria-label="Dribbble"><FaDribbble /></a>
