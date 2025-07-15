@@ -9,9 +9,9 @@ export default function Portfolio() {
   };
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 bg-white/30 backdrop-blur-lg border border-white/40 shadow ${
-      darkMode ? 'text-white' : 'text-gray-900'
-    }`}>
+    <div className={`min-h-screen transition-colors duration-300 ${
+      darkMode ? 'bg-black/70 text-white' : 'bg-white/30 text-gray-900'
+    } backdrop-blur-lg border border-white/40 shadow`}>
       {/* Navigation */}
       {/* <nav className="flex justify-between items-center px-8 py-6">
         <div className="text-2xl font-bold">
