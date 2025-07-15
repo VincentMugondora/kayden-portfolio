@@ -3,11 +3,11 @@ import { FaLinkedin, FaBehance } from 'react-icons/fa';
 import Icon from '../assets/person.png'
 
 const CircularText = () => (
-  <svg width="160" height="160" viewBox="0 0 160 160" className="circular-text-spin absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0 opacity-80 pointer-events-none">
+  <svg width="130" height="130" viewBox="0 0 130 130" className="circular-text-spin absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0 opacity-80 pointer-events-none">
     <defs>
-      <path id="circle" d="M80,80 m-65,0 a65,65 0 1,1 130,0 a65,65 0 1,1 -130,0" />
+      <path id="circle" d="M65,65 m-55,0 a55,55 0 1,1 110,0 a55,55 0 1,1 -110,0" />
     </defs>
-    <text fontSize="12" fill="#0e9488" fontFamily="Georgia, serif" letterSpacing="2">
+    <text fontSize="10" fill="#0e9488" fontFamily="poppins-thin" letterSpacing="2">
       <textPath xlinkHref="#circle" startOffset="0">
         DESIGN IS LIFE · DESIGN IS LIFE · DESIGN IS LIFE ·
       </textPath>
