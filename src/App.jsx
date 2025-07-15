@@ -8,13 +8,23 @@ import Works from './pages/Works';
 import Contact from './pages/Contact';
 import Ellipse4 from './assets/Ellipse 4.svg';
 import Ellipse5 from './assets/Ellipse 5.svg';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    const checkDark = () => setIsDark(document.body.classList.contains('dark'));
+    checkDark();
+    const observer = new MutationObserver(checkDark);
+    observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <div className="app-root relative overflow-hidden">
-      {/* Always show revolving SVG blobs in the background */}
-      <div className="fixed inset-0 -z-10 bg-black overflow-hidden flex items-center justify-center">
+      {/* Always show revolving SVG blobs in the background, but bg color depends on mode */}
+      <div className={`fixed inset-0 -z-10 ${isDark ? 'bg-black' : 'bg-white'} overflow-hidden flex items-center justify-center`}>
         <div className="relative flex flex-col items-center justify-center animate-spin-slow" style={{ width: '40vw', height: '80vw' }}>
           <img
             src={Ellipse4}
