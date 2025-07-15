@@ -39,7 +39,7 @@ const Contact = () => {
           <button type="submit" className="mt-2 flex items-center gap-2 text-lg font-serif font-semibold hover:underline underline-offset-2 w-fit pl-0">
             SEND
             <span className="arrow-rotate">
-              <svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M4 8h8M8 4l4 4-4 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              <svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8 12V4M4 8l4-4 4 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </span>
           </button>
         </form>
