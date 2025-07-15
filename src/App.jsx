@@ -14,17 +14,17 @@ function App() {
     <div className="app-root relative overflow-hidden">
       {/* Glassy Revolving SVG Blobs Eight Shape Background */}
       <div className="fixed inset-0 -z-10 bg-white overflow-hidden flex items-center justify-center">
-        <div className="relative flex flex-col items-center justify-center animate-spin-slow" style={{ width: '40vw', height: '80vw' }}>
+        <div className="relative flex flex-col items-center justify-center animate-spin-slow" style={{ width: '100vw', height: '100vw' }}>
           <img
             src={Ellipse4}
             alt=""
-            className="w-[100vw] mb-[-8vw] pointer-events-none select-none"
+            className="w-[70vw] mb-[-8vw]"
             style={{ filter: 'blur(0px)' }}
           />
           <img
             src={Ellipse5}
             alt=""
-            className="w-[100vw] mt-[-8vw] pointer-events-none select-none"
+            className="w-[70vw] mt-[-8vw]"
             style={{ filter: 'blur(0px)' }}
           />
         </div>
