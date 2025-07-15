@@ -10,7 +10,7 @@ export default function Portfolio() {
 
   return (
     <div className={`min-h-screen transition-colors duration-300 ${
-      darkMode ? 'bg-gray-900 text-white' : 'bg-gradient-to-br from-green-50 to-green-100 text-gray-900'
+      darkMode ? 'bg-transparent text-white' : 'bg-transparent text-gray-900'
     }`}>
       {/* Navigation */}
       {/* <nav className="flex justify-between items-center px-8 py-6">

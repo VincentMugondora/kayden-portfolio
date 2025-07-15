@@ -17,7 +17,7 @@ const CircularText = () => (
 
 const Home = () => {
   return (
-    <section className="min-h-[76vh] text-black font-poppins flex flex-col justify-center px-4 md:px-20 lg:flex-row relative overflow-x-hidden bg-white">
+    <section className="min-h-[76vh] text-black font-poppins flex flex-col justify-center px-4 md:px-20 lg:flex-row relative overflow-x-hidden bg-transparent">
       {/* Left Content */}
       <div className="flex-1 flex flex-col justify-center py-16 md:py-24 z-10 dark:py-20">
         <div className="relative w-fit mx-auto lg:mx-0 mb-4 flex items-center justify-center dark:mb-6" style={{minWidth: 'max-content'}}>
@@ -55,7 +55,11 @@ const Home = () => {
       </div>
       {/* Right Content */}
       <div className="flex-1 flex justify-center items-center relative mt-10 lg:mt-0 z-10 dark:mt-12">
-        <div className="w-44 h-56 md:w-64 md:h-82 bg-[#161313] rounded-t-full rounded-b-none flex items-end justify-center relative shadow-lg rounded-t-[100px] shadow-xl">
+        <div className="relative group w-44 h-56 md:w-64 md:h-82 bg-[#161313] rounded-t-full rounded-b-none flex items-end justify-center shadow-lg rounded-t-[100px] shadow-xl">
+          {/* Speech bubble */}
+          <div className="absolute -top-8 left-1/2 -translate-x-1/2 px-4 py-2 bg-white text-black text-base rounded-2xl shadow group-hover:opacity-100 opacity-0 transition-opacity pointer-events-none before:content-[''] before:absolute before:bottom-[-10px] before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-t-white before:border-x-transparent before:border-b-0 before:border-solid before:w-0 before:h-0">
+            Hi, I am Munya
+          </div>
           <img
             src={Icon}
             alt="Munya Emoji"
