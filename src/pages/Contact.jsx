@@ -47,7 +47,7 @@ const Contact = () => {
       {/* Right: Image */}
       <div className="h-[80vh] flex-1 flex items-center justify-center mt-32 md:mt-0">
         <div className="">
-          <img src={personImg} alt="Person" className="w-60 h-60 md:w-80 md:h-80 object-cover" />
+          <img src={personImg} alt="Person" className="w-60 h-60 md:w-80 md:h-80 object-cover animate-floatY" />
         </div>
       </div>
     </section>

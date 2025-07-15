@@ -175,6 +175,15 @@ body, html {
   animation: fade-in 0.3s ease;
 }
 
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-32px); }
+}
+
+.animate-floatY {
+  animation: floatY 3s ease-in-out infinite;
+}
+
 body.dark {
   background: #000 !important;
   color: #fff !important;
