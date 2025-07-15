@@ -17,13 +17,13 @@ function App() {
         <img
           src={Ellipse4}
           alt=""
-          className="absolute w-[120vw] left-[-30vw] top-[-25vw] opacity-80 animate-spin-slow pointer-events-none select-none"
+          className="absolute w-[70vw] left-[-10vw] top-[-10vw] opacity-80 animate-spin-slow pointer-events-none select-none"
           style={{ filter: 'blur(0px)' }}
         />
         <img
           src={Ellipse5}
           alt=""
-          className="absolute w-[110vw] right-[-40vw] top-[10vw] opacity-80 animate-spin-reverse-slower pointer-events-none select-none"
+          className="absolute w-[60vw] right-[-15vw] top-[20vw] opacity-80 animate-spin-reverse-slower pointer-events-none select-none"
           style={{ filter: 'blur(0px)' }}
         />
       </div>
