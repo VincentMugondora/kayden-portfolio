@@ -10,10 +10,16 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <div className="app-root relative overflow-hidden">
-      {/* Glassy Revolving Green Circles Background */}
-      <div className="fixed inset-0 -z-10 bg-black overflow-hidden">
-        <div className="absolute w-[60vw] h-[60vw] left-[-20vw] top-[-10vw] rounded-full bg-[#0d3d2c] opacity-60 blur-3xl animate-spin-slow" />
-        <div className="absolute w-[70vw] h-[70vw] right-[-25vw] top-[10vw] rounded-full bg-[#0d3d2c] opacity-60 blur-3xl animate-spin-reverse-slower" />
+      {/* Glassy Revolving Green Blobs Background */}
+      <div className="fixed inset-0 -z-10 bg-white overflow-hidden">
+        {/* Blob 1: Bright Green */}
+        <div className="absolute w-[100vw] h-[100vw] left-[-30vw] top-[-25vw] opacity-60 blur-[120px] animate-spin-slow"
+          style={{ background: '#1ED291', borderRadius: '42% 58% 63% 37% / 55% 45% 60% 40%' }}
+        />
+        {/* Blob 2: Deep Green */}
+        <div className="absolute w-[120vw] h-[120vw] right-[-45vw] top-[15vw] opacity-60 blur-[140px] animate-spin-reverse-slower"
+          style={{ background: '#00754B', borderRadius: '60% 40% 55% 45% / 40% 60% 45% 55%' }}
+        />
       </div>
       {/* Main Content */}
       <div className="relative z-10">
