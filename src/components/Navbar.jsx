@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <nav
       className={`w-full flex items-center justify-between px-4 md:px-12 py-4 border-b border-black/10 font-serif sticky top-0 z-30 backdrop-blur-md transition-colors duration-300 ${
-        darkMode ? 'bg-black/30' : 'bg-white/70'
+        darkMode ? 'bg-black/10' : 'bg-white/70'
       }`}
     >
       {/* Logo */}
@@ -33,21 +33,6 @@ const Navbar = () => {
             Works
           </Link>
         </li>
-        {/* <li>
-          <a href="#contributions" className="hover:text-green-600 transition-colors">
-            Contributions
-          </a>
-        </li> */}
-        {/* <li>
-          <a href="#talks" className="hover:text-green-600 transition-colors">
-            Talks
-          </a>
-        </li> */}
-        {/* <li>
-          <a href="#community" className="hover:text-green-600 transition-colors">
-            Community
-          </a>
-        </li> */}
         <li>
           <Link to="/contact" className="hover:text-green-600 transition-colors">
             Contact me
@@ -79,14 +64,15 @@ const Navbar = () => {
           onClick={handleToggleDark}
         >
           {darkMode ? (
-            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="black">
-              <circle cx="12" cy="12" r="8" strokeWidth="2" />
-              <circle cx="12" cy="12" r="2" fill="black" />
+            // White moon icon for dark mode
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="white">
+              <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           ) : (
+            // Black sun icon for light mode
             <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="black">
-              <circle cx="12" cy="12" r="8" strokeWidth="2" />
-              <circle cx="12" cy="12" r="2" fill="black" />
+              <circle cx="12" cy="12" r="5" strokeWidth="2" />
+              <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" strokeWidth="2" />
             </svg>
           )}
         </span>
