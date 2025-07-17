@@ -16,41 +16,41 @@ const Navbar = () => {
   const handleToggleDark = () => setDarkMode((d) => !d);
 
   return (
-    <nav className="w-full flex flex-col md:flex-row items-center justify-between px-4 md:px-8 py-6 font-sans border border-white/40 bg-white/30 backdrop-blur-lg border border-white/40shadow sticky top-0 z-30 gap-4 md:gap-0">
+    <nav className="w-full flex items-center justify-between px-4 md:px-12 py-4 border-b border-black/10 bg-white font-serif sticky top-0 z-30">
       {/* Logo */}
-      <div className="text-2xl font-bold tracking-tight select-none">
-        Munyaradzi<span className="text-teal-600">.</span>
-      </div>
+      <div className="text-2xl md:text-3xl font-serif font-bold tracking-tight select-none">Muny<span className="text-green-400">a</span>radzi.</div>
       {/* Desktop Nav Links */}
-      <ul className="hidden md:flex gap-8 text-base font-normal text-gray-900 font-sans mx-auto">
-      <li><Link to="/" className="hover:underline underline-offset-4 transition">Home</Link></li>
-        <li><Link to="/works" className="hover:underline underline-offset-4 transition">Works</Link></li>
-        {/* <li><a href="#" className="hover:underline underline-offset-4 transition">Contributions</a></li> */}
-        {/* <li><a href="#" className="hover:underline underline-offset-4 transition">Talks</a></li> */}
-        {/* <li><a href="#" className="hover:underline underline-offset-4 transition">Community</a></li> */}
-        <li><Link to="/contact" className="hover:underline underline-offset-4 transition">Contact me</Link></li>
+      <ul className="hidden md:flex items-center space-x-8 text-base font-medium">
+        <li><Link to="/works" className="hover:text-green-600 transition-colors">Works</Link></li>
+        <li><a href="#contributions" className="hover:text-green-600 transition-colors">Contributions</a></li>
+        <li><a href="#talks" className="hover:text-green-600 transition-colors">Talks</a></li>
+        <li><a href="#community" className="hover:text-green-600 transition-colors">Community</a></li>
+        <li><Link to="/contact" className="hover:text-green-600 transition-colors">Contact me</Link></li>
+        <button className="ml-4 px-4 py-1 border border-black rounded hover:bg-gray-100 transition-colors">My Resume</button>
+        <span className="ml-4 text-2xl cursor-pointer" title="Toggle dark mode" onClick={handleToggleDark}>{darkMode ? '☀️' : '🌙'}</span>
       </ul>
-      {/* Desktop Resume & Theme Icon */}
-      <div className="hidden md:flex items-center gap-4">
-        <button className="border border-gray-900 px-4 py-1 rounded hover:bg-gray-900 hover:text-white transition font-sans text-base font-medium focus:outline-none focus:ring-2 focus:ring-teal-500">My Resume</button>
-        <span className="text-2xl cursor-pointer" title="Toggle dark mode" onClick={handleToggleDark}>{darkMode ? '☀️' : '🌙'}</span>
+      {/* Mobile Menu & Dark Mode */}
+      <div className="flex md:hidden items-center space-x-2">
+        <button className="border border-black rounded px-4 py-1 text-black font-semibold text-base" onClick={() => setMenuOpen(!menuOpen)}>Menu</button>
+        <span className="w-8 h-8 flex items-center justify-center rounded-full border border-black ml-2 bg-white cursor-pointer" title="Toggle dark mode" onClick={handleToggleDark}>
+          {darkMode ? (
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="black"><circle cx="12" cy="12" r="8" strokeWidth="2"/><circle cx="12" cy="12" r="2" fill="black"/></svg>
+          ) : (
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="black"><circle cx="12" cy="12" r="8" strokeWidth="2"/><circle cx="12" cy="12" r="2" fill="black"/></svg>
+          )}
+        </span>
       </div>
-      {/* Mobile Menu Button */}
-      <button className="md:hidden border border-gray-900 px-4 py-1 rounded font-sans text-base font-medium flex items-center gap-2" onClick={() => setMenuOpen(!menuOpen)}>
-        Menu
-      </button>
       {/* Mobile Dropdown */}
       {menuOpen && (
-        <div className="absolute top-full left-0 w-full bg-white/30 backdrop-blur-lg shadow-lg flex flex-col items-center py-4 z-40 md:hidden animate-fade-in border border-white/40">
-          <ul className="flex flex-col gap-4 text-base font-normal text-gray-900 font-sans">
-            <li><Link to="/works" className="hover:underline underline-offset-4 transition" onClick={() => setMenuOpen(false)}>Works</Link></li>
-            <li><a href="#" className="hover:underline underline-offset-4 transition" onClick={() => setMenuOpen(false)}>Contributions</a></li>
-            <li><a href="#" className="hover:underline underline-offset-4 transition" onClick={() => setMenuOpen(false)}>Talks</a></li>
-            <li><a href="#" className="hover:underline underline-offset-4 transition" onClick={() => setMenuOpen(false)}>Community</a></li>
-            <li><Link to="/contact" className="hover:underline underline-offset-4 transition" onClick={() => setMenuOpen(false)}>Contact me</Link></li>
+        <div className="absolute top-full left-0 w-full bg-white shadow-lg flex flex-col items-center py-4 z-40 md:hidden animate-fade-in border-b border-black/10">
+          <ul className="flex flex-col gap-4 text-base font-medium text-black font-serif">
+            <li><Link to="/works" className="hover:text-green-600 transition-colors" onClick={() => setMenuOpen(false)}>Works</Link></li>
+            <li><a href="#contributions" className="hover:text-green-600 transition-colors" onClick={() => setMenuOpen(false)}>Contributions</a></li>
+            <li><a href="#talks" className="hover:text-green-600 transition-colors" onClick={() => setMenuOpen(false)}>Talks</a></li>
+            <li><a href="#community" className="hover:text-green-600 transition-colors" onClick={() => setMenuOpen(false)}>Community</a></li>
+            <li><Link to="/contact" className="hover:text-green-600 transition-colors" onClick={() => setMenuOpen(false)}>Contact me</Link></li>
           </ul>
-          <button className="mt-4 border border-gray-900 px-4 py-1 rounded hover:bg-gray-900 hover:text-white transition font-sans text-base font-medium focus:outline-none focus:ring-2 focus:ring-teal-500">My Resume</button>
-          <span className="mt-4 text-2xl cursor-pointer" title="Toggle dark mode" onClick={handleToggleDark}>{darkMode ? '☀️' : '🌙'}</span>
+          <button className="mt-4 px-4 py-1 border border-black rounded hover:bg-gray-100 transition-colors font-serif text-base font-medium">My Resume</button>
         </div>
       )}
     </nav>
