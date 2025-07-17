@@ -63,11 +63,11 @@ const Home = () => {
         </div>
         {/* Right/Emoji Arch */}
         <div className="flex-1 flex justify-center md:justify-end items-center relative mt-10 md:mt-0 z-10">
-          <div className="w-64 h-72 md:w-96 md:h-[28rem] bg-black rounded-t-full rounded-b-none flex items-end justify-center overflow-hidden shadow-lg">
+          <div className="w-[80vw] h-44 md:w-64 md:h-[50vh] bg-black rounded-t-full rounded-b-none flex items-end justify-center overflow-hidden shadow-lg">
             <img
               src={Icon}
               alt="Munya Emoji"
-              className="w-56 h-56 md:w-80 md:h-80 object-contain mb-[-10px]"
+              className="w-full h-32 md:w-56 md:h-56 object-contain mt-[-40px]"
             />
           </div>
           {/* Scroll Indicator */}
