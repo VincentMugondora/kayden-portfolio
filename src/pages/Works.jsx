@@ -34,7 +34,7 @@ export default function Portfolio() {
         <h2 className="text-4xl font-bold mb-12 -mt-16">Website Projects</h2>
         
         {/* Project Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="flex overflow-x-auto space-x-8 pb-4 mb-12 scrollbar-thin scrollbar-thumb-green-600 scrollbar-track-transparent snap-x snap-mandatory">
           {/* Card 1 */}
           <div className="group relative p-8 rounded-lg border-2 transition-all duration-500 hover:shadow-lg overflow-hidden bg-white dark:bg-black border-green-600 hover:bg-green-100 dark:hover:bg-green-800">
             {/* Default Content */}
@@ -204,6 +204,38 @@ export default function Portfolio() {
 
               {/* Casestudy Link */}
               <a href="#" className="inline-flex items-center text-sm font-medium text-white hover:text-orange-200 transition-colors underline">
+                Casestudy <ExternalLink size={16} className="ml-1" />
+              </a>
+            </div>
+          </div>
+
+          {/* Card 4 */}
+          <div className="group relative p-8 rounded-lg border-2 transition-all duration-500 hover:shadow-lg overflow-hidden bg-white dark:bg-black border-green-600 hover:bg-green-100 dark:hover:bg-green-800 min-w-[320px] max-w-xs snap-center">
+            {/* Default Content */}
+            <div className="transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-4">
+              <h3 className="text-4xl font-bold text-green-600 mb-4 group-hover:text-white">
+                Portfolio<br />Website
+              </h3>
+              <p className="text-sm mb-6 leading-relaxed">
+                A personal portfolio website to showcase my projects, skills, and experience. Built with React and Tailwind CSS, it features a modern design, responsive layout, and smooth animations for an engaging user experience.
+              </p>
+              <a href="#" className="inline-flex items-center text-sm font-medium hover:text-green-600 transition-colors">
+                Casestudy <ExternalLink size={16} className="ml-1" />
+              </a>
+            </div>
+
+            {/* Hover Content */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-8 group-hover:translate-y-0">
+              {/* Laptop Mockup */}
+              <div className="relative mb-8">
+                <div className="w-40 h-24 bg-gray-900 rounded-t-lg mx-auto flex items-center justify-center">
+                  <span className="text-white font-bold text-lg">PORTFOLIO</span>
+                </div>
+                <div className="w-40 h-2 bg-gray-700 rounded-b-lg mx-auto"></div>
+              </div>
+
+              {/* Casestudy Link */}
+              <a href="#" className="inline-flex items-center text-sm font-medium text-white hover:text-green-200 transition-colors underline">
                 Casestudy <ExternalLink size={16} className="ml-1" />
               </a>
             </div>
