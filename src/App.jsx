@@ -25,17 +25,17 @@ function App() {
     <div className="app-root relative overflow-hidden">
       {/* Always show revolving SVG blobs in the background, but bg color depends on mode */}
       <div className={`fixed inset-0 -z-10 ${isDark ? 'bg-black' : 'bg-white'} overflow-hidden flex items-center justify-center`}>
-        <div className="relative flex flex-col items-center justify-center animate-spin-slow" style={{ width: '40vw', height: '80vw' }}>
+        <div className="relative flex flex-col items-center justify-center animate-spin-slow w-[100vw] h-[100vw] md:w-[40vw] md:h-[40vw]">
           <img
             src={Ellipse4}
             alt=""
-            className="w-[100vw] mb-[-8vw] pointer-events-none select-none"
+            className="w-[100vw] md:w-[100vw] mb-[-8vw] pointer-events-none select-none"
             style={{ filter: 'blur(0px)' }}
           />
           <img
             src={Ellipse5}
             alt=""
-            className="w-[100vw] mt-[-8vw] pointer-events-none select-none"
+            className="w-[100vw] md:w-[100vw] mt-[-8vw] pointer-events-none select-none"
             style={{ filter: 'blur(0px)' }}
           />
         </div>
