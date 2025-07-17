@@ -62,7 +62,6 @@ const Home = () => {
           </div>
         </div>
         {/* Right/Emoji Arch */}
-        {/* Right/Emoji Arch */}
 <div className="flex-1 flex justify-center md:justify-end items-center relative mt-10 md:mt-0 z-10 w-full">
   <div className="bg-black rounded-t-full rounded-b-none flex items-end justify-center overflow-hidden shadow-lg w-[85vw] h-64 md:w-64 md:h-[50vh]">
     <img
