@@ -33,21 +33,21 @@ const Navbar = () => {
             Works
           </Link>
         </li>
-        <li>
+        {/* <li>
           <a href="#contributions" className="hover:text-green-600 transition-colors">
             Contributions
           </a>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <a href="#talks" className="hover:text-green-600 transition-colors">
             Talks
           </a>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <a href="#community" className="hover:text-green-600 transition-colors">
             Community
           </a>
-        </li>
+        </li> */}
         <li>
           <Link to="/contact" className="hover:text-green-600 transition-colors">
             Contact me

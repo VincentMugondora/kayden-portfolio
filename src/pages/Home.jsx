@@ -62,22 +62,24 @@ const Home = () => {
           </div>
         </div>
         {/* Right/Emoji Arch */}
-        <div className="flex-1 flex justify-center md:justify-end items-center relative mt-10 md:mt-0 z-10">
-          <div className="w-[90vw] h-64 md:w-64 md:h-[50vh] bg-black rounded-t-full rounded-b-none flex items-end justify-center overflow-hidden shadow-lg">
-            <img
-              src={Icon}
-              alt="Munya Emoji"
-              className="w-[90vw] h-48 md:w-56 md:h-56 object-contain mt-[-40px]"
-            />
-          </div>
-          {/* Scroll Indicator */}
-          <span
-            className="absolute right-[-32px] bottom-8 md:bottom-0 text-base text-black tracking-widest font-serif font-semibold rotate-90 opacity-70"
-            style={{ letterSpacing: '0.2em' }}
-          >
-            SCROLL <span aria-hidden>↗</span>
-          </span>
-        </div>
+        {/* Right/Emoji Arch */}
+<div className="flex-1 flex justify-center md:justify-end items-center relative mt-10 md:mt-0 z-10 w-full">
+  <div className="bg-black rounded-t-full rounded-b-none flex items-end justify-center overflow-hidden shadow-lg w-[85vw] h-64 md:w-64 md:h-[50vh]">
+    <img
+      src={Icon}
+      alt="Munya Emoji"
+      className="w-full h-48 md:w-56 md:h-56 object-contain mt-[-40px]"
+    />
+  </div>
+  {/* Scroll Indicator */}
+  <span
+    className="absolute right-[-32px] bottom-8 md:bottom-0 text-base text-black tracking-widest font-serif font-semibold rotate-90 opacity-70"
+    style={{ letterSpacing: '0.2em' }}
+  >
+    SCROLL <span aria-hidden="true">↗</span>
+  </span>
+</div>
+
       </div>
     </section>
   );
