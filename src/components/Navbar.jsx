@@ -16,7 +16,7 @@ const Navbar = () => {
   const handleToggleDark = () => setDarkMode((d) => !d);
 
   return (
-    <nav className="w-full flex flex-col md:flex-row items-center justify-between px-4 md:px-8 py-6 font-sans border border-white/40 bg-white/30 backdrop-blur-lg shadow sticky top-0 z-30 gap-4 md:gap-0">
+    <nav className="w-full flex flex-col md:flex-row items-center justify-between px-4 md:px-8 py-6 font-sans border border-white/40 bg-white/30 backdrop-blur-lg border border-white/40shadow sticky top-0 z-30 gap-4 md:gap-0">
       {/* Logo */}
       <div className="text-2xl font-bold tracking-tight select-none">
         Munyaradzi<span className="text-teal-600">.</span>
