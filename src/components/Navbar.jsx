@@ -16,9 +16,9 @@ const Navbar = () => {
   const handleToggleDark = () => setDarkMode((d) => !d);
 
   return (
-    <nav className="w-full flex items-center justify-between px-4 md:px-12 py-4 border-b border-black/10 bg-white font-serif sticky top-0 z-30">
+    <nav className="w-full flex items-center justify-between px-4 md:px-12 py-4 border-b border-black/10 bg-white/60 backdrop-blur-lg font-serif sticky top-0 z-30">
       {/* Logo */}
-      <div className="text-2xl md:text-3xl font-serif font-bold tracking-tight select-none">Muny<span className="text-green-400">a</span>radzi.</div>
+      <Link to="/" className="text-2xl md:text-3xl font-serif font-bold tracking-tight select-none">Muny<span className="text-green-400">a</span>radzi.</Link>
       {/* Desktop Nav Links */}
       <ul className="hidden md:flex items-center space-x-8 text-base font-medium">
         <li><Link to="/works" className="hover:text-green-600 transition-colors">Works</Link></li>
